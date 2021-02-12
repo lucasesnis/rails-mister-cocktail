@@ -2,6 +2,7 @@
 
 <div>
   <% @cocktails.each do |cocktail| %>
-    <p>cocktail.name</p>
+    <p><%= cocktail.name %></p>
+    <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
   <% end %>
 </div>
