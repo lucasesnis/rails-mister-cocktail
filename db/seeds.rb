@@ -12,7 +12,7 @@ Ingredient.create!(name: "mint leaves")
 
 Cocktail.destroy_all
 
-Cocktail.create!(name: "Sex on the beach")
+Cocktail.create!(name: "Sex on the beach", photo: "san_francisco.jpg")
 
 Dose.destroy_all
 Dose.create!(description: '3 teaspoons', cocktail: Cocktail.first, ingredient: Ingredient.first)
