@@ -1,5 +1,4 @@
 class CocktailsController < ApplicationController
-  has_one_attached :photo
 
   def index
     @cocktails = Cocktail.all
