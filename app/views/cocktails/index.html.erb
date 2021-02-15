@@ -4,7 +4,7 @@
   <% @cocktails.each do |cocktail| %>
     <p><%= link_to cocktail.name, cocktail_path(cocktail)%></p>
     <% if cocktail.photo.nil? == false %>
-      <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
+      <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill%>
     <% end %>
   <% end %>
 </div>
